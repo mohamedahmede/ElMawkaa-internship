@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.nav-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding-top: 5px;
+    align-items: center;
+}
+.topnav {
+    overflow: hidden;
+    padding: 0 24px;
+    margin: 0px 166px;
+}
+
+/*Removing <a> default style*/
+.topnav a {
+    color: inherit;
+    margin-right: 25px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+/*Nav hover effect*/
+.topnav a:hover {
+    color: #0f766e;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.nav-flag {
+    width: 25px;
+}
+
+
+/*Section 1*/
+.section-1 {
+    position: relative;
+    text-align: center;
+    height: 550px;
+    width: 100%;
+    padding: 150px;
+    line-height: 20px;
+    background-image: url(./img/home-bg.jpg);
+ 
+}
+
+.section-1-div {
+    position: absolute;
+    text-align: center;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 60px;
+}
+
+.section-1-header {
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+}
+.section-1-paragraph {
+    color: #fff;
+}
+.section-1-btn {
+    color: #fff;
+    background-color: #935CAE;
+    border: 1px solid purple;
+    padding: 0.5rem 3rem;
+    font-size: larger;
+    margin-top: 20px;
+}
+
+.section-1-btn:hover {
+    background-color: indigo;
+    color: #777;
+    cursor: pointer;
+    border: none;
+}
+
+/*Section 2  Products*/ 
+.section-2-header {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    padding: 10px 250px;
+    border: none;
+  }
+
+  .grid-item {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+
+
+  .grid-img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .grid-item:hover {
+    color: #fff;
+
+    -webkit-filter: brightness(50%);
+  }
+
+  .product-title {
+    position: absolute;
+    z-index: 1;
+    right: 10%;  
+    color: black;
+}
+
+/*Site footer*/
+.row {
+    background-color: #f9f9f9;
+    height: 400px;
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  
+  }
+   footer li {
+    list-style: none;
+    padding: 20px;
+   }
+  
+   .left-footer {
+    display: flex;
+   }
+  
+   .footer-support-icon {
+    margin-left: 20px;
+   }
+  
+   .footer-icons {
+    font-size: 50px;
+   }
+
+   .footer-links-row {
+    background-color: black;
+    color: #fff;
+    display: flex;
+   }
+
+   .right-footer {
+    right: 0;
+   }
+
+
+/*Product Page*/
+/*Multi step form*/
+
+.bg-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url("/img/home-bg.jpg");
+  height: 100%;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+
+.productPageContainer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.formHeader {
+  text-align: center;
+}
+
+.product-btn {
+  background-color: transparent;
+  border: #935CAE 1px solid;
+  border-radius: 5px;
+  color: #935CAE;
+  font-size: larger;
+  padding: 10px;
+}
+
+.product-btn:hover {
+  background-color: #935CAE;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.product-img {
+  height: 300px;
+}
+
+
+
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+  border-radius: 5px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 60px;
+  width: 20%;
+  margin: 20px 2px;
+  background-color: #935CAE;
+  border: 1px solid #adb5bd;
+  border-radius: 20px;
+  display: inline-block;
+  opacity: 0.5;
+  text-align: center;
+  padding: 20px 10px;
+  color: #f9f9f9;
+}
+
+.stepNum {
+  float: right;
+  margin-left: 5px;
+  width: 20px;
+  border: solid 1px #f9f9f9;
+  border-radius: 50%;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
